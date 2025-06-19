@@ -1,0 +1,33 @@
+name: tanya_ai
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  http: ^1.1.0
+  lottie: ^2.7.0
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/success.json
+    - assets/lottie/consult.json
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
