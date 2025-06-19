@@ -5,7 +5,7 @@ import '../controllers/ai_controller.dart';
 import 'result_screen.dart';
 import 'history_screen.dart';
 
-// ignore: use_key_in_widget_constructors
+
 class HomeScreen extends StatelessWidget {
   final controller = Get.find<AIController>();
 
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.history),
             onPressed: () =>
-                Get.to(() => HistoryScreen()), // Navigasi ke histori
+                Get.to(() => HistoryScreen()), 
           ),
         ],
       ),
