@@ -1,10 +1,10 @@
-// 📁 lib/screens/history_screen.dart
+
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/ai_controller.dart';
 
-// ignore: use_key_in_widget_constructors
+
 class HistoryScreen extends StatelessWidget {
   final controller = Get.find<AIController>();
 
