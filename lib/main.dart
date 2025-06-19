@@ -4,7 +4,7 @@ import 'controllers/ai_controller.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  Get.put(AIController()); // Inisialisasi controller
+  Get.put(AIController()); 
   runApp(MyApp());
 }
 
