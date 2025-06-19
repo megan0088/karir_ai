@@ -1,11 +1,9 @@
-// 📁 lib/screens/result_screen.dart
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import '../controllers/ai_controller.dart';
 
-// ignore: use_key_in_widget_constructors
 class ResultScreen extends StatelessWidget {
   final controller = Get.find<AIController>();
 
@@ -18,7 +16,7 @@ class ResultScreen extends StatelessWidget {
         child: Column(
           children: [
             Lottie.asset(
-              'assets/lottie/success.json', // Pastikan file Lottie ini ada di folder assets/lottie/
+              'assets/lottie/success.json',
               width: 200,
               height: 200,
               repeat: false,
@@ -52,7 +50,7 @@ class ResultScreen extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {
                 controller.reset();
-                Get.back(); // kembali ke HomeScreen
+                Get.back(); 
               },
               icon: Icon(Icons.refresh),
               label: Text('Tanya Lagi'),
