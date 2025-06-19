@@ -1,11 +1,10 @@
-// 📁 lib/services/ai_service.dart
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AIService {
   static const _apiKey =
-      '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';
+      'your api key';
   static const _apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
 
   static Future<String> getCareerRecommendation({
@@ -20,12 +19,11 @@ class AIService {
           'Authorization': 'Bearer $_apiKey',
           'Content-Type': 'application/json',
           'HTTP-Referer':
-              'https://yourapp.com', // ganti dengan domain kamu atau localhost
+              'https://yourapp.com', 
           'X-Title': 'Tanya AI Konsultan Karier',
         },
         body: jsonEncode({
-          "model": "openai/gpt-3.5-turbo", // atau bisa ganti model lain
-          "messages": [
+          "model": "openai/gpt-3.5-turbo", 
             {
               "role": "system",
               "content":
